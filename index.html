@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            height: 500px;
+            background-color: beige;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 50px 1fr 50px;
+        }
+       .Header{
+        background-color: aqua;
+        font-size: 2rem;
+        color: #fff;
+        grid-column: 2/-1;
+       } 
+       .Menu{
+        background-color: rgb(30, 36, 36);
+        font-size: 2rem;
+        color: #fff;
+        grid-row: 1/3;
+        justify-content: center;
+        
+       }
+       .Content{
+        background-color: rgb(255, 0, 55);
+        font-size: 2rem;
+        color: #fff;
+        grid-column: 2/-1;
+        
+       }
+       .Footer{
+        background-color: rgb(188, 216, 32);
+        font-size: 2rem;
+        color: #fff;
+        grid-column: 1/-1;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="Header">Header</div>
+        <div class="Menu">Menu</div>
+        <div class="Content">Content</div>
+        <div class="Footer">Footer</div> 
+
+    </div>
+</body>
+</html>
